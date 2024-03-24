@@ -1,0 +1,85 @@
+//This is where you can edit your CSS, or better yet, create additional scss files and import them.
+//You can compile this to css using the command: sass --watch template.scss:..\css\mkspeed.min.css --style compressed
+
+$prefix: "";
+
+// Load our local copy of Bootstrap
+@import "bootstrap-5.3.3/bootstrap.scss";
+//@import "bootstrap-5.3.3/bootstrap-grid";
+// Overrides
+/* @import "bootstrap-5.3.3/buttons";
+@import "bootstrap-5.3.3/dropdown";
+@import "bootstrap-5.3.3/forms";
+@import "bootstrap-5.3.3/functions";
+@import "bootstrap-5.3.3/modal";
+@import "bootstrap-5.3.3/nav";
+@import "bootstrap-5.3.3/pagination";
+@import "bootstrap-5.3.3/tables";
+@import "bootstrap-5.3.3/variables"; */
+
+// Import this file to make columns work in com_content
+//@import "_modifiers";
+
+//Your CSS Here
+.nav-mkspeed .active {
+  font-weight: bolder;
+  pointer-events: none;
+}
+.nav-mkspeed {
+  background-color: green;
+  margin-bottom: 0.1em;
+}
+
+.news-list .list-group-item:nth-of-type(odd) {
+  background-color: rgba($color: green, $alpha: 0.5);
+}
+
+.news-list .list-group-item:nth-of-type(even) {
+  background-color: rgba($color: green, $alpha: 0.8);
+}
+
+.news-list .list-group-item.current {
+  background-color: rgba(0, 128, 0, 1);
+  font-weight: bolder;
+}
+
+.news-list {
+  padding: 0.25em;
+}
+
+.article {
+  position: relative;
+  display: flow-root;
+}
+
+.article > .article-img {
+  max-width: 20em;
+  max-height: 10em;
+  float: left;
+  margin-right: 0.25em;
+  margin-bottom: 0.25em;
+  border: 1px solid $dark-border-subtle;
+  position: relative;
+}
+
+.hvr-grow {
+  &:hover,
+  &:focus-visible {
+    transform: scaleX(1.05);
+    transition-duration: 0.3s ease-in-out transform;
+  }
+}
+
+.article-date .post-date {
+  &::before {
+    content: "📅 ";
+    display: inline-block;
+  }
+  font-size: small;
+}
+
+@media screen and (max-width: 800px) {
+  .article > .article-img {
+    max-width: 100%;
+  }
+}
