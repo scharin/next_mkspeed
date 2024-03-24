@@ -5,6 +5,7 @@ import Link from "next/link";
 import logo from "@/assets/images/brand/mkspeedLogoNoText.svg";
 import Script from "next/script";
 import NavLink from "./NavLink";
+import { MK_NAME } from "@/assets/constants";
 
 const Navbar = () => {
   return (
@@ -14,7 +15,7 @@ const Navbar = () => {
         <Link className="navbar-brand" href="/">
           <Image src={logo} alt="MK Speed Logo" height="40" />
         </Link>
-        MkSpeed
+        {MK_NAME}
         <button
           className="navbar-toggler"
           type="button"
@@ -29,9 +30,9 @@ const Navbar = () => {
         <div className="collapse navbar-collapse ms-5" id="navbarNavAltMarkup">
           <div className="navbar-nav">
             <NavLink href="/" name="Hem" />
-            <NavLink href="/news" name="Nyheter" />
-            <NavLink href="/about" name="Klubben" />
-            <NavLink href="/races" name="Tävlingar" />
+            <NavLink href="/news/" name="Nyheter" />
+            <NavLink href="/about/" name="Klubben" />
+            <NavLink href="/races/" name="Tävlingar" />
           </div>
         </div>
       </div>

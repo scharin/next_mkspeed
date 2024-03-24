@@ -10,7 +10,7 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-To start SASS compiler:
+To start SASS compiler (Needs bootstrap files to be in `./sass/bootstrap/[...]`):
 
 ```bash
 sass --watch sass/mkspeed.scss:assets/styles/globals.min.css --style compressed

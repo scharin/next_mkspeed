@@ -23,7 +23,7 @@ $prefix: "";
 //Your CSS Here
 .nav-mkspeed .active {
   font-weight: bolder;
-  pointer-events: none;
+  //pointer-events: none;
 }
 .nav-mkspeed {
   background-color: green;
@@ -41,6 +41,11 @@ $prefix: "";
 .news-list .list-group-item.current {
   background-color: rgba(0, 128, 0, 1);
   font-weight: bolder;
+}
+
+.news-list .list-group-item a {
+  color: inherit;
+  text-decoration: inherit;
 }
 
 .news-list {
@@ -65,7 +70,7 @@ $prefix: "";
 .hvr-grow {
   &:hover,
   &:focus-visible {
-    transform: scaleX(1.05);
+    transform: scaleX(1.02);
     transition-duration: 0.3s ease-in-out transform;
   }
 }

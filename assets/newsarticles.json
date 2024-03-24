@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "date": "2024-01-01",
+    "header": "Some cute header",
+    "formattedText": "Laorem <strong>ipsum</strong> dolor sit, amet consectetur adipisicing elit. Maiores eius magni odit excepturi magnam sit voluptatem velit esse repudiandae, numquam molestias fugit? Reprehenderit delectus velit consectetur recusandae omnis laborum, architecto quam neque maiores! Totam iste pariatur, non excepturi blanditiis asperiores cumque harum deleniti, temporibus aliquam nam nisi tenetur laborum eveniet vitae sed enim accusantium sit aut quidem atque facilis beatae?",
+    "imgUrl": "20240101.png"
+  },
+  {
+    "id": 2,
+    "date": "2024-02-02",
+    "header": "Header 2 and something",
+    "formattedText": "<p>Laorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores eius magni odit excepturi magnam sit voluptatem velit esse repudiandae, numquam molestias fugit? Reprehenderit delectus velit consectetur recusandae omnis laborum, architecto quam neque maiores! Totam iste pariatur, non excepturi blanditiis asperiores cumque harum deleniti, temporibus aliquam nam nisi tenetur laborum eveniet vitae sed enim accusantium sit aut quidem atque facilis beatae?</p>",
+    "imgUrl": "20240202.jpg"
+  },
+  {
+    "id": 3,
+    "date": "2024-03-03",
+    "header": "Header 3 - and it's fairly long for the funs of it",
+    "formattedText": "<p>Short news something something meeeh</p>"
+  }
+]
